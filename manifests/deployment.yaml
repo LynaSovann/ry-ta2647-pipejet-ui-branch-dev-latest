@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ry-ta2647-pipejet-ui-branch-dev-latest-deployment
+  labels:
+    app: ry-ta2647-pipejet-ui-branch-dev-latest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ry-ta2647-pipejet-ui-branch-dev-latest
+  template:
+    metadata:
+      labels:
+        app: ry-ta2647-pipejet-ui-branch-dev-latest
+    spec:
+      containers:
+        - name: ry-ta2647-pipejet-ui-branch-dev-latest-container
+          image: pipejet/ry-ta2647-pipejet-ui-branch-dev-latest:0
+          ports:
+            - containerPort: 3000

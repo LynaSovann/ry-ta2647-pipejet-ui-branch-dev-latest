@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: ry-ta2647-pipejet-ui-branch-dev-latest-container
-          image: pipejet/ry-ta2647-pipejet-ui-branch-dev-latest:0
+          image: pipejet/ry-ta2647-pipejet-ui-branch-dev-latest:1
           ports:
             - containerPort: 3000
